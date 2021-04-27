@@ -12,7 +12,6 @@ Universal Styling
 
 body {
   background-color: white;
-
 }
 
 html {
@@ -29,6 +28,7 @@ header {
   background: #ceeae8;
   top: 0;
   width: 100%;
+  z-index: 99999;
 }
 
 nav ul li {
@@ -80,12 +80,15 @@ nav a:active {
 
 .portfolio-page {
   border-bottom: 4px solid #a0a5a5;
+  background: white;
 }
 .home-page {
   border-bottom: 4px solid #a0a5a5;
+  background: white;
 }
 .about-page {
   border-bottom: 4px solid #a0a5a5;
+  background: white;
 }
 .contact-page {
   border-bottom: 4px solid #a0a5a5;
@@ -96,96 +99,211 @@ Home Page Styling
 
 ================================*/
 .top-section {
-  max-width: 100%;
-  height: 400px;
+  max-width: 1024px;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
+
 .welcome {
   text-align: center;
   font-family: 'Open Sans Regular', sans-serif;
-  font-size: 50px;
-  margin-top: 150px;
+  font-size: 60px;
+  margin-top: 120px;
+  margin-bottom: 10px;
 }
 
 .welcome2 {
-  font-size: 25px;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 30px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.middle {
-
-  background-color: #ceeae8;
-  width: 100%;
-  height: 50px;
+  color: black;
 }
 
 .bottom {
-  background-color: #233f99;
+  background-color: black;
+  text-align: center;
   width: 100%;
-  height: 700px;
+  height: 200px;
 }
 
-.technology {
-  position: absolute;
-  max-width: 405px;
-  margin: 20px;
-  text-align: center;
-  right: 100px;
-  top: 975px;
-  font-size: 18px;
-  color: white;
-  font-family: 'Open Sans Regular', sans-serif;
+.bottom .links {
+text-align: center;
 }
+
+.links ul li {
+  display: inline;
+}
+
+.links a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+}
+
+.links li {
+  display: inline-block;
+  margin: 45px 15px;
+  padding-top: 30px;
+}
+
+.links a:hover {
+  color: #ceeae8;
+  transition: .3s;
+}
+
 /*================================
 
 Portfolio Page Styling
 
 ================================*/
-
-.container {
-  height: 1000px;
-  background-color: #ebeded;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 900px;
+.project-container {
+    max-width: 1024px;
+    min-height: 1600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 10px;
 }
-.projects{
-  padding:100px;
-  text-align: center;
-  color: #233f99;
-  font-size: 40px;
-  font-family: 'Poppins', Arial, sans-serif;
+.float-left{
+  float: left;
 }
 
-section.gallery img {
-  width: 200px;
-  height: 150px;
-  margin: 10px;
+.projects img {
+  box-sizing: border-box;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  padding: 20px;
+  transition: .3s;
 }
 
-span.lb-caption {
-  font-size: 30px !important;
+.projects img:hover {
+  transform: scale(1.5);
+  transition: .3s;
+}
+
+.projects h2 {
+  background: #233f99;
+  text-align: left;
   color: white;
-  font-family: 'Poppins', Arial, sans-serif;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+
+.bottomcontainer {
+  text-align: center;
+  width: 100%;
+  min-height: 330px;
+  background-color: white;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.welcome3 {
+  text-align: center;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 40px;
+  padding-top: 30px;
+  color: black;
+}
+
+.quote {
+  text-align: center;
+  font-family: 'Open Sans Regular', sans-serif;
+  color: black;
+}
+
+.welcome4 {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: absolute;
+  color: #233f99;
+  animation: wind 20s linear infinite reverse;
+  z-index: 100;
+}
+@keyframes wind {
+  from{
+    left: -300px;
+  }
+  to{
+    left: 1000px;
+  }
 }
 /*================================
 
 About Page Styling
 
 ================================*/
-
 .about {
-  width: 100%;
-  height: 700px;
-  background-color: #ebeded;
+  max-width: 1024px;
+  min-height: 700px;
+  margin: 0 auto;
 }
-.info{
-  padding:100px;
-  text-align: center;
-  color: #233f99;
-  font-size: 40px;
-  font-family: 'Poppins', Arial, sans-serif;
+
+.about p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  }
+
+.about h1 {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+}
+
+.left-half,
+.right-half {
+  width: 45%;
+  display: inline-block;
+}
+
+.left-half img {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.right-half {
+  vertical-align: top;
+  padding-left: 30px;
+}
+
+.about2 {
+  max-width: 1024px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.about2 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  padding-left: 20px;
+}
+
+.about2 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.about-img {
+  float: right;
+  margin: 0 50px 50px;
 }
 
 /*================================
@@ -194,34 +312,77 @@ Contact Page Form Styling
 
 ================================*/
 .pseudo .touch:first-child {
-  margin-top: 30px;
+  padding-top: 40px;
   font-family: 'Open Sans Regular', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
+  color: white;
 }
+
 .pseudo p:nth-child(2) {
-  color: #233f99;
+  color: #ceeae8;
   font-family: 'Open Sans Regular', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   margin-top: 10px;
 }
+
 .pseudo p:last-child {
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 20px;
+  margin-top: 15px;
   font-family: 'Open Sans Regular', sans-serif;
+  color: white;
 }
-.container {
-  max-width: 1000px;
-  margin: 20px auto 80px;
+
+.map:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0 ;
+  right: 0;
+  background-image: linear-gradient(to top, #ceeae8, transparent);
+  z-index: 1;
+}
+
+.map h1 {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  font-size: 65px;
   text-align: center;
+  padding-top: 200px;
+}
+
+.map {
+  background-image: url('../images/staugmap.png');
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
+  height: 600px;
+  z-index: 2;
+}
+
+.container2 {
+  max-width: 100%;
+  margin-bottom: 70px;
+  text-align: center;
+  height: 220px;
+  background-color: #233f99;
+}
+
+.container3 {
+  max-width: 100%;
+  height: 500px;
 }
 
 .contact-form {
-  background: #233f99;
-  padding: 20px;
+  background: #ceeae8;
+  padding: 25px;
   max-width: 500px;
   border-radius: 5px;
-  color: white;
+  color: black;
   font-family: 'Open Sans Regular', sans-serif;
   margin: 20px auto;
   text-align: left;
@@ -244,7 +405,7 @@ input:hover {
 .submit input {
   background: white;
   color: #231f20;
-  padding: 5px 20px;
+  padding: 10px 20px;
   display: inline;
 }
 
@@ -260,9 +421,11 @@ input {
   padding: 5px 10px;
   border-radius: 3px;
 }
+
 textarea {
   font-family: sans-serif;
   padding: 10px 10px;
+  width: 100%;
 }
 
 select {
@@ -270,31 +433,34 @@ select {
   padding: 8px 0;
   border-radius: 4px;
 }
-.create {
-  font-family: 'Open Sans Regular', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 150px;
+
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+  position: relative;
+  left: 770px;
+  padding-top: 15px;
 }
 
-.container1 {
-  background-color: #ebeded;
-  width: 100%;
-  height: 400px;
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
 }
 
-/*================================
+details > p {
+  border-radius: 0 0 5px 5px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
 
-image2 Styling
-
-================================*/
-.location {
-  max-height: 230px;
-  max-width: 250px;
-  position: absolute;
-  right: 276px;
-  top: 145px;
+details[open] > summary {
+  background-color: #ccf;
 }
 
 /*================================
@@ -305,21 +471,24 @@ Footer Styling
 
 footer {
   font-family: 'Poppins', sans-serif;
-  background: #a0a5a5;
+  background: black;
   color: #231f20;
   text-align: center;
-  padding: 50px 0;
   height: 200px;
+  padding-top: 40px;
 }
- footer a{
+
+ footer a {
    color: white;
    font-size: 40px;
    margin: 0 5px;
    transition: .3s;
  }
+
  .website {
    margin-bottom: 8px;
  }
+
  footer a:hover {
    color: #ceeae8;
    transition: .3s;
@@ -328,5 +497,6 @@ footer {
  .copyright {
    margin-top: 4px;
    font-size: 10px;
-   color: #333;
+   color: white;
+   padding-top: 5px;
  }
