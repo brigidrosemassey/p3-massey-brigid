@@ -31,7 +31,7 @@
 
   </head>
   <body>
-    <header class="about-page">
+    <header>
         <!--Logo-->
       <a href="index.html"><img class="logo" src="images/bmdlogotrans.png" alt="Logo" /></a>
         <!--nav menu-->
@@ -44,16 +44,17 @@
           </ul>
         </nav>
     </header>
+
     <div class="about">
       <h1>Meet Brigid Massey</h1>
       <section>
-       <div class="left-half">
-        <img src="images/meet-brigid.jpg" alt="Meet Brigid" width="500" >
-       </div>
+     <div class="left-half">
+      <img src="images/meet-brigid.jpg" alt="Meet Brigid" width="500" />
+     </div>
 
     <div class="right-half">
       <h2>Creative Director</h2>
-      <p>Understanding that quality marketing and design begins with understanding the customer and the competition is the foundation for my work. Using the sales and marketing experience I gained while working for major Fortune 500 companies, I try to bring the perfect blend of customer service and professionalism to the planning and execution with every project I work on. Being experienced with different cultures has led me to believe that we are all connected no matter what language we speak or where we are from. Our connection to others can be unified through line and color in effective designs. Connecting lines to create an image that brings people together to share a common feeling of optimism and a sense of belonging is my ultimate goal.
+      <p>Superior marketing and design begins with understanding the customer and the competition. This technique is the foundation for my design process. Using the sales and marketing experience I gained while working for major Fortune 500 companies, brings the perfect blend of experience and professionalism to the planning and execution on every project that I work on. We are all connected no matter what language we speak or where we are from. Our connection to others can be unified through line and color in effective designs. 
       </p>
     </div>
    </section>
@@ -63,9 +64,47 @@
         <img class="about-img" src="images/beachshot.jpg" alt="Butler Beach" width="500" />
         <h2>In My Free Time...</h2>
         <p>When I am not at work, I enjoy the outdoors. I live in the nations "Oldest City", St. Augustine Florida. Living near the ocean allows me to take walks on the beach and enjoy the water.  I also enjoy travelling and discovering hidden gems located within my own state of Florida and within the United States. There are so many natural beauties located within driving distance and with each visit I discover something new.</p>
-
       </section>
-    </div>
+  </div>
+
+  <div class="contactme">
+      <h2>Contact Me</h2>
+  </div>
+
+  <div class="container3">
+    <form class="contact-form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+      <div class="first-name input-section">
+        <label for="firstname" class="label_input_wrap">First Name:
+        </label>
+        <input type="text" name="req_firstname" id="firstname" placeholder="ex: Brigid" />
+      </div>
+
+      <div class="last-name input-section">
+             <label for="lastname" class="label_input_wrap">Last Name:</label>
+             <input type="text" name="req_lastname" id="lastname"  placeholder="ex:Massey"/>
+      </div>
+
+      <div class ="email input-section">
+             <label for="email" class="label_input_wrap">Email:</label>
+             <input type="email" name="req_email" id="email" placeholder="ex:youremail@email.com"/>
+      </div>
+
+      <div class="telephone input-section">
+             <label for="telephone" class="label_input_wrap">Telephone:</label>
+             <input type="tel" name="telephone" id="telephone" placeholder="ex:555-555-5555" />
+      </div>
+
+      <div class="comments input-section">
+             <label for="comments" class="label_imput_wrap">Comments: </label>
+             <textarea name="comments" id="comments" cols="60" rows="5" placeholder="Your Comment Goes Here"></textarea>
+      </div>
+
+           <div class="submit input-section">
+             <input type="submit" value="Submit Form"/>
+           </div>
+     </form>
+   </div>
+
   <footer>
        <a href="https://facebook.com/brigid.rose.98" target="_blank"><i class="fab fa-facebook"></i></a>
        <a href="https://instagram.com/brigidrosemassey/" target="_blank"><i class="fab fa-instagram"></i></a>
